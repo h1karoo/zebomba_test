@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/s.css">
+    <title>Zebomba_test</title>
+</head>
+<body>
+    <span class="title">Тестовое задание</span>
+    <div class="container map">
+        <img src="images/map.png" alt="Карта" class="map__background">
+        <img src="images/character.png" alt="Персонаж" class="map__character" id="character">
+        <div class="map__controls">
+            <div class="friends">
+                <div class="slider-container">
+                    <button class="arrow left-arrow"></button>
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                        </div>
+                    </div>
+                    <button class="arrow right-arrow"></button>
+                </div>
+            </div>
+            <div class="chat"></div>
+            <button id="nextPoint">В УНИВЕР</button>
+            <div class="mail"></div>
+            <div class="ladder"></div>
+        </div>
+        <div id="ratingModal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Рейтинг игроков</h2>
+                </div>
+                <button class="close-btn"></button>
+                <div class="modal-body">
+                    <table class="rating-table">
+                        <thead>
+                            <tr>
+                                <th>Место</th>
+                                <th></th>
+                                <th>Имя Фамилия</th>
+                                <th>Опыт</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ratingTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/points.js"></script>
+    <script src="data.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
